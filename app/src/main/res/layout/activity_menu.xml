@@ -1,0 +1,239 @@
+<android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="match_parent"
+                    android:background="#fffFFF"
+                    android:layout_height="match_parent"
+                    tools:context=".Main">
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/header"
+                app:navigationIcon="@mipmap/icon"
+
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#79BAEC"
+                app:title="Glacial App Portal"
+                app:titleTextColor="#ffffff"
+
+                android:theme="@style/Theme.AppCompat" />
+        <ProgressBar
+                android:layout_width="wrap_content"
+                android:id="@+id/progress"
+                android:visibility="invisible"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content" />
+        <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="0dp"
+                android:id="@+id/bet"
+                android:layout_height="match_parent" />
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_below="@+id/header"
+                android:weightSum="100"
+
+                android:layout_toLeftOf="@+id/bet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RelativeLayout
+                    android:id="@+id/aboutbut"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="29"
+                    android:orientation="vertical"
+            >
+                <TextView
+                        android:layout_below="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:text="Tasks"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content" />
+                <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/task"
+
+                        android:layout_height="70dp" /></RelativeLayout>
+            <RelativeLayout
+
+                    android:id="@+id/jobsbut"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="29"   android:orientation="vertical"
+            >
+                <TextView
+                        android:layout_below="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:text="Production Note"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content" />
+                <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/production"
+
+                        android:layout_height="70dp" /></RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/faqbut"
+                    android:visibility="invisible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="29"
+                    android:orientation="vertical"
+            >
+
+
+
+                <TextView
+                        android:layout_below="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:text="Faqs"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content" />
+
+                <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/ic_launcher"
+
+                        android:layout_height="70dp" />
+
+
+            </RelativeLayout>   <ImageView
+                android:layout_weight="14"
+                android:background="#79BAEC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/></LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_below="@+id/header"
+                android:weightSum="100"
+                android:id="@+id/ss"
+                android:layout_toRightOf="@+id/bet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RelativeLayout
+                    android:id="@+id/orderbut"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="29"
+                    android:orientation="vertical"
+            >
+
+                <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/labtest"
+
+                        android:layout_height="70dp" />
+                <TextView
+                        android:layout_below="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:text="Lab Test"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                    android:id="@+id/signoutbut"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="29"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+
+                        android:background="@mipmap/checklis" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Check List"
+                        android:textColor="#000000" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/contactbut"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="29"
+                    android:orientation="vertical"
+            >
+
+                <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/logs"
+                        android:layout_height="70dp" />
+                <TextView
+                        android:layout_below="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:text="Logs"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <ImageView
+                    android:layout_weight="16"
+                    android:background="#79BAEC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout> <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true" >
+    <include layout="@layout/nav_header"/></android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

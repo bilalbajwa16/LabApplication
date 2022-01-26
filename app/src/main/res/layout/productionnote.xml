@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:background="#ffffff"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content">
+    <RelativeLayout
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/back"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/serial"
+            android:layout_marginLeft="0.1dp"
+            android:background="@drawable/back"
+            android:layout_width="30dp"
+            android:layout_height="90dp">
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                android:layout_margin="5dp"
+                android:textAlignment="viewStart"
+                android:gravity="start"
+                android:id="@+id/index"
+                android:layout_width="wrap_content"
+                android:text="1"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+                android:id="@+id/parameter"
+                android:layout_marginLeft="0.1dp"
+                android:background="@drawable/back"
+                android:layout_toRightOf="@+id/serial"
+                android:layout_width="220dp"
+            android:textAlignment="textStart"
+            android:gravity="start"
+                android:layout_height="90dp">
+
+            <TextView
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000"
+                    android:layout_margin="5dp"
+                android:textAlignment="viewStart"
+                android:gravity="start"
+                    android:id="@+id/parametertext"
+                    android:layout_width="wrap_content"
+                    android:text="Check if ozone meter setting is 8 min ON/5 min OFF"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/glacialths"
+                android:layout_marginLeft="0.1dp"
+                android:background="@drawable/back"
+                android:layout_toRightOf="@+id/parameter"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+            <EditText
+                    android:inputType="number"
+                    android:visibility="gone"
+                    android:textColor="#000000"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/result"
+                   android:background="@drawable/back"
+                    android:layout_centerHorizontal="true"/>
+            <ImageView
+                   android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:id="@+id/tick"
+android:background="@drawable/right"
+android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                android:layout_alignParentLeft="true"
+                    android:layout_width="30dp"
+                    android:text="Unobjectionable"
+                    android:layout_height="30dp"/>
+            <ImageView
+                    android:visibility="gone"
+                    android:background="@drawable/wrong"
+                    android:layout_width="30dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/cross"
+                android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="30dp"/>
+
+
+
+            <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/tds"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+<ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/center"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+                <RelativeLayout
+
+                        android:layout_marginLeft="0.1dp"
+                        android:background="#000000"
+                        android:layout_toRightOf="@+id/center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp"
+                            android:layout_width="wrap_content"
+                            android:text="Lowest TDS"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <RelativeLayout
+android:id="@+id/s"
+                        android:layout_marginLeft="0.1dp"
+                        android:background="#000000"
+                        android:layout_toLeftOf="@+id/center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp"
+                            android:layout_width="wrap_content"
+                            android:text="Highest TDS"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+<RelativeLayout
+        android:id="@+id/tsdedit"
+        android:layout_below="@+id/s"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/cent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"/>
+    <EditText
+            android:inputType="number"
+android:textColor="#000000"
+            android:id="@+id/hightds"
+            android:layout_toLeftOf="@+id/cent"
+            android:layout_width="match_parent"
+      android:background="@drawable/back"
+            android:layout_height="match_parent"
+    />
+    <EditText
+            android:inputType="number"
+android:textColor="#000000"
+            android:id="@+id/lowerds"
+            android:layout_toRightOf="@+id/cent"
+            android:layout_width="match_parent"
+            android:background="@drawable/back"
+            android:layout_height="match_parent"
+            />
+</RelativeLayout>
+            </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

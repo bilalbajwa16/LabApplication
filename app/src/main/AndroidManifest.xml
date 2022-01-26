@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lab.pak.com.glacialappportal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/networkconfig"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name=".NotificationList"></activity>
+        <activity android:name=".ViewTask" />
+        <activity android:name=".TaskActivity" />
+        <activity
+            android:name=".Task"
+            android:label="@string/title_activity_task"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".UsersData.UsersList" />
+        <activity android:name=".LabTest.LabList" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".LabTest.LabTestActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".Menu" />
+        <activity android:name=".ProductionNote.ProductionNote" />
+        <activity android:name=".Logs.Logs" />
+        <activity android:name=".UrduReport.CheckList" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Glacial App Portal">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
